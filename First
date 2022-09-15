@@ -1,8 +1,0 @@
-pablic class Program {
-    public static void main(String[] args){
-       int x;
-       int y;
-       z=x+y;
-       System.out.println(z);
-   }
-}
