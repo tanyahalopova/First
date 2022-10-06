@@ -16,10 +16,6 @@ public class DZ2Z1{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         int x=scanner.nextInt();
-        if (someMethod(x)==true){
-            System.out.println("YES");
-        }else{
-            System.out.println("NO");
-        }
+        System.out.println(someMethod(x)?"YES":"NO");
     }
 }
