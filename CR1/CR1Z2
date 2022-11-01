@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class CR1Z2 {
+    static int pol(String x) {
+        int n=x.length();
+        int s=x.length()/2;
+        int i=0;
+        int col=0;
+        while (i<s){
+            if (x.charAt(i)==x.charAt(n-i)){
+                col+=1;
+            }
+            else{
+                return False;
+            }
+            return True;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int col=0;
+        for (int i=0; i<n; i++){
+            String x= scanner.nextln();
+            if (pol(x)){
+                col+=1;
+            }
+        }
+        System.out.println(col);
+    }
+}
