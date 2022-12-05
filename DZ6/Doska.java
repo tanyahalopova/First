@@ -1,14 +1,21 @@
-import java.util.Scanner;
+package DZ6;
 
-public class  Doska{
-    private int n = 0;
-    public Doska(n){
-        if (n>10){
-            System.err.println()
+public class Doska {
+    private double n = 0;
+
+    public void setn(double n) {
+        if (this.n + n > 100) {
+            System.err.println("Нет места!");
+        } else {
+            this.n += n;
         }
-        this.n=n;
     }
-    public int getn(){
+
+    public double getn() {
         return n;
+    }
+
+    public void deln(double n) {
+        this.n -= n;
     }
 }
