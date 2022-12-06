@@ -23,22 +23,26 @@ public class Circle extends Shape implements General {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o)
+        if (this == o) {
             return true;
-        if (o == null || getClass() != o.getClass())
+        }
+        if (o == null || getClass() != o.getClass()) {
             return false;
-
+        }
         Circle that = (Circle) o;
 
-        if (x != that.x)
+        if (x != that.x) {
             return false;
-        if (n != that.n)
+        }
+        if (n != that.n) {
             return false;
-        if (crayon != that.crayon)
+        }
+        if (crayon != that.crayon) {
             return false;
-        if (brightness != that.brightness)
+        }
+        if (brightness != that.brightness) {
             return false;
-        if (definition != that.definition)
-            return false;
+        }
+        return definition == that.definition;
     }
 }

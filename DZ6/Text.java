@@ -24,4 +24,12 @@ public class Text implements General {
     public void delete(Doska a) {
         a.deln(n);
     }
+
+    public String toString() {
+        return "Text{ s=" + s +
+                ", font=" + font +
+                ", fontsize" + fontsize +
+                ", color" + color +
+                ", size in dask" + n;
+    }
 }
